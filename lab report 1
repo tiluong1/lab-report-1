@@ -1,5 +1,6 @@
 [user@sahara ~]$ cd
 [user@sahara ~/lecture1]$ ls
+lecture1
 Hello.class  Hello.java  messages  README
 [user@sahara ~]$ cat~
 
