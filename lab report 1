@@ -1,0 +1,53 @@
+[user@sahara ~]$ cd
+[user@sahara ~/lecture1]$ ls
+Hello.class  Hello.java  messages  README
+[user@sahara ~]$ cat~
+
+home directory
+cd: moved directroy to home directory
+ls: lecture1 in the home directory
+cat: home directory 
+cd: no error
+ls: no error
+cat: no error
+
+
+
+[user@sahara ~]$ cd lecture1
+
+[user@sahara ~/lecture1]$ ls lecture1
+ls: cannot access 'lecture1': No such file or directory
+
+
+[user@sahara /]$ cat lecture1
+cat: lecture1: No such file or directory
+
+user@sahara ~/lecture1]$ cd Hello.java
+bash: cd: Hello.java: Not a directory
+
+
+[user@sahara ~/lecture1]$ ls Hello.java
+Hello.java
+
+[user@sahara ~/lecture1]$ cat Hello.java
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+public class Hello {
+  public static void main(String[] args) throws IOException {
+    String content = Files.readString(Path.of(args[0]), StandardCharsets.UTF_8);    
+    System.out.println(content);
+  }
+
+
+cd: the file is not a directory
+ls: listed the Hello.java file 
+cat: read the message in Hello.java file
+cd: no error
+ls: no error
+cat: no error 
+
+
+
